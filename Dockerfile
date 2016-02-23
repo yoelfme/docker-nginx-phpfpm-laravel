@@ -6,7 +6,7 @@ WORKDIR /tmp
 
 # Install Nginx, PHP-FPM and popular/laravel required extensions
 RUN apt-get update -y && \
-    apt-get -y install nginx php5-fpm php5-mysql php-apc php5-imagick php5-imap php5-mcrypt php5-curl php5-cli php5-gd php5-pgsql php5-sqlite php5-common php-pear curl php5-json php5-redis redis-server memcached php5-memcache php5-geoip php5-ldap php5-xdebug php5-xmlrpc php5-xcache; 
+    apt-get -y install nginx php5-fpm php5-mysql php5-imagick php5-imap php5-mcrypt php5-curl php5-cli php5-gd php5-pgsql php5-sqlite php5-common php-pear curl php5-json php5-redis redis-server memcached php5-memcache php5-geoip php5-ldap php5-xdebug php5-xmlrpc php5-xcache; 
 
 # Configure PHP-FPM
 RUN sed -i "s/;date.timezone =.*/date.timezone = UTC/" /etc/php5/fpm/php.ini && \
