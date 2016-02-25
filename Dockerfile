@@ -54,4 +54,4 @@ EXPOSE 80
 EXPOSE 443
 
 # Start service of PHP FPM and Nginx
-CMD php5-fpm -c /etc/php5/fpm && /etc/init.d/nginx restart
+CMD php5-fpm -c /etc/php5/fpm && nginx
